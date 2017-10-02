@@ -9,8 +9,10 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 cv2.imwrite('parta.jpg',img)
 
-# # Part B
+# Part B
+# Resize the images to 1/4 the size
 img = cv2.resize(img, (0,0), fx=0.25, fy=0.25)
+# Resize back up to original size
 img = cv2.resize(img, (0,0), fx=4, fy=4)
 cv2.imshow('Part B',img)
 cv2.waitKey(0)
@@ -28,14 +30,14 @@ ret,label,center = cv2.kmeans(
 	None,
 	(
 		cv2.TERM_CRITERIA_MAX_ITER,
-		3,
+		3, # 3 iterations to match kmeans call
 		1
 	),
-	3,
+	3, # 3 iterations max
 	cv2.KMEANS_RANDOM_CENTERS
 )
 
-# Now convert back into uint8, and make original image
+# Now convert back into uint8, and make original image, according to docs
 center = np.uint8(center)
 res = center[label.flatten()]
 img = res.reshape((img.shape))
