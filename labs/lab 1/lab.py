@@ -1,3 +1,6 @@
+# Matthew Langlois
+# Student # 7731813
+
 #!/usr/local/bin/python3
 import numpy as np
 import cv2
