@@ -64,12 +64,12 @@ while(1):
 
 	# Press escape to quit
 	if k == 27:
-		cv2.imwrite('results/Img02_0076.bmp',img1)
-		cv2.imwrite('results/Img02_0077.bmp',img2)
-		cv2.imwrite('results/Img02_0078.bmp',img3)
-		cv2.imwrite('results/park466.bmp',img4)
-		cv2.imwrite('results/park467.bmp',img5)
-		cv2.imwrite('results/park468.bmp',img6)
+		cv2.imwrite('results/Img02_0076.bmp', img1)
+		cv2.imwrite('results/Img02_0077.bmp', img2)
+		cv2.imwrite('results/Img02_0078.bmp', img3)
+		cv2.imwrite('results/park466.bmp', img4)
+		cv2.imwrite('results/park467.bmp', img5)
+		cv2.imwrite('results/park468.bmp', img6)
 		cv2.destroyAllWindows()
 		break
 
