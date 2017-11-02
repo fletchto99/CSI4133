@@ -31,7 +31,7 @@ while(cap.isOpened()):
     last_gray = frame
     out.write(processed)
     cv2.imshow('Video',processed)
-    if cv2.waitKey(100) & 0xFF == ord('q'):
+    if cv2.waitKey(24) & 0xFF == ord('q'):
         break
 
 # Cleanup
