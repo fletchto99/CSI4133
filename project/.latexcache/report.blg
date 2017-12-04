@@ -1,0 +1,9 @@
+[0] Config.pm:354> INFO - This is Biber 2.7
+[0] Config.pm:357> INFO - Logfile is '.latexcache/report.blg'
+[60] biber-darwin:303> INFO - === Sun Dec  3, 2017, 20:25:54
+[91] Biber.pm:359> INFO - Reading '.latexcache/report.bcf'
+[195] Biber.pm:835> INFO - Found 0 citekeys in bib section 0
+[203] Utils.pm:164> WARN - The file '.latexcache/report.bcf' does not contain any citations!
+[211] bbl.pm:608> INFO - Writing '.latexcache/report.bbl' with encoding 'UTF-8'
+[212] bbl.pm:712> INFO - Output to .latexcache/report.bbl
+[212] Biber.pm:109> INFO - WARNINGS: 1
