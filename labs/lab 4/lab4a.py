@@ -5,7 +5,7 @@
 import numpy as np
 import cv2
 
-img = cv2.imread('images/Picture3.png')
+img = cv2.imread('./images/hand.png')
 hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 
 # We don't need to do anything on change
@@ -13,7 +13,7 @@ def change(value):
     #read the image as grayscale
 
 
-    threshold = cv2.inRange(hsv, np.array([value,0,0]), np.array([value,255,255]))
+    threshold = cv2.inRange(hsv, np.array([value,180,0]), np.array([value+10,255,255]))
 
     res = cv2.bitwise_and(img,img, mask=threshold)
 
